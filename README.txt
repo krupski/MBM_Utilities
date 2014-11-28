@@ -90,6 +90,32 @@ If you wish to work with the Targa (TGA) format instead, simply use the two util
 "png2mbm.exe" -> converts PNG format to MBM format
 
 
+Information for Linux users
+===========================
+
+Basically the same as above. Either use the utilities in "drag-n-drop" mode as described
+above, or else use the command line (a bash shell). You can pipe multiple files into the
+converter utility and it will process one after the other. For example:
+
+ls *.mbm | mbm2png
+
+Will read every filename with the ".mbm" extension and send it through the pipe into
+mbm2png. Then, the mbm2png utility will open each file and create the PNG version of
+the MBM file in the same directory.
+
+Which version to use in my Linux?
+=================================
+
+If you have 64 bit Linux (any distro), use the utilities in the "linux64" directory. If
+you are using 32 bit Linux, use the utilities in the "linux32" directory. If you're not
+sure, try a 64 bit utility. If you get an error message, try the 32 bit version. If
+neither of them work, contact me and let me know what version and distro of Linux you
+are using. This should never happen, but who knows?  :)
+
+
+Lastly......
+============
+
 Any problems or questions? PM me in the KSP Forum: Use this URL:
 
 http://forum.kerbalspaceprogram.com/private.php?do=newpm&u=83088
